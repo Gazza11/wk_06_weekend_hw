@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier League Hall of Fame</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/app.js"></script>
+</head>
+<body>
+    <form action="">
+        <div>
+            <div>
+                <label for="name">Player's Name:</label>
+                <input type="text" name="name" id="name">
+            </div>
+
+            <div>
+                <label for="position">Position:</label>
+                <select name="position" id="position">
+                    <option value="" disabled selected>Choose a Position</option>
+                    <option value="goalkeeper">Goalkeeper</option>
+                    <option value="defender">Defender</option>
+                    <option value="midfielder">Midfielder</option>
+                    <option value="forward">Forward</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="teams">Teams Played for:</label>
+                <input type="text" name="teams" id="teams">
+            </div>
+
+            <div>
+                <label for="appearances">Total Premier League Appearances:</label>
+                <input type="number" name="appearances" id="appearances">
+            </div>
+
+            <div>
+                <label for="goals">Total Premier League Goals:</label>
+                <input type="number" name="goals" id="goals">
+            </div>
+
+            <div>
+                <label for="trophies">Total Trophies:</label>
+                <textarea name="trophies" id="trophies" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+        <input type="submit" value="save">
+    </form>
+</body>
+</html>
