@@ -1,3 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('JavaScriptLoaded')
+const newPlayerAdd = document.querySelector('#new-player-form');
+newPlayerAdd.addEventListener('submit', handlePlayerAdd);
+
 })
+
+const handlePlayerAdd = function (event) {
+    event.preventDefault();
+    console.log(event);
+}
