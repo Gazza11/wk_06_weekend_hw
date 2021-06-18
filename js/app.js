@@ -13,6 +13,7 @@ const handlePlayerAdd = function (event) {
     const listItem = createPlayerItem(event.target)
     const playerList = document.querySelector('#player-list');
     playerList.appendChild(listItem);
+    console.log(listItem)
 
     document.querySelector('#new-player-form').reset();
 }
