@@ -9,16 +9,20 @@
     <script src="js/app.js"></script>
 </head>
 <body>
-    <form id="new-player-form">
-        <div id="player-name">
-            <div>
+    <header id="header">
+        <h1>Premier League Hall of Fame</h1>
+        <img src="static/img/Premier-League-symbol.png" alt="Premier-League-symbol" height="160px" width="275px">
+    </header>
+    <form>
+        <div id="new-player-form">
+            <div id="player-name">
                 <label for="name">Player's Name:</label>
                 <input type="text" name="name" id="name" required>
             </div>
 
             <div id="player-chooser">
                 <div>
-                    <label for="">Choose a Position</label>
+                    <label for="">Choose a Position:</label>
                 </div>
 
                 <div>
@@ -49,12 +53,12 @@
 
             <div id="player-apps">
                 <label for="appearances">Total Premier League Appearances:</label>
-                <input type="number" name="appearances" id="appearances"required>
+                <input type="number" name="appearances" id="appearances"required min="0">
             </div>
 
             <div id="player-goals">
                 <label for="goals">Total Premier League Goals:</label>
-                <input type="number" name="goals" id="goals" required>
+                <input type="number" name="goals" id="goals" required min="0">
             </div>
 
             <div id="player-trophies">
@@ -62,9 +66,9 @@
                 <textarea name="trophies" id="trophies" cols="30" rows="10" required></textarea>
             </div>
         </div>
-        <div>
-            <input type="submit" value="Add">
-        </div>
+            <div>
+                <input type="submit" value="Add">
+            </div>
     </form>
 
     <button id="delete-all">Delete All Entries</button>
