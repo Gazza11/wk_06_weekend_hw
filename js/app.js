@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const newPlayerAdd = document.querySelector('#new-player-form');
     newPlayerAdd.addEventListener('submit', handlePlayerAdd);
 
+    const deleteAll = document.querySelector('#delete-all')
+    deleteAll.addEventListener('click', handleDeleteAll)
 })
 
 const handlePlayerAdd = function (event) {
@@ -38,4 +40,9 @@ const handlePlayerAdd = function (event) {
 
     document.querySelector('#new-player-form').reset();
 
+}
+
+const handleDeleteAll = function () {
+    const playerList = document.querySelector('#player-list')
+    playerList.innerHTML = ""
 }
